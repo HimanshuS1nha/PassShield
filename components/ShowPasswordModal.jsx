@@ -55,6 +55,7 @@ const ShowPasswordModal = ({
               <Text style={tw`font-bold`}>{username}</Text>
               <TouchableOpacity
                 style={tw`border-2 border-blue-600 p-2 rounded-full`}
+                onPress={() => handleCopy(username)}
               >
                 <Entypo name="clipboard" size={16} color="black" />
               </TouchableOpacity>
@@ -64,6 +65,7 @@ const ShowPasswordModal = ({
               <Text style={tw`font-bold`}>{password}</Text>
               <TouchableOpacity
                 style={tw`border-2 border-blue-600 p-2 rounded-full`}
+                onPress={() => handleCopy(password)}
               >
                 <Entypo name="clipboard" size={16} color="black" />
               </TouchableOpacity>
